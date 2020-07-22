@@ -1,0 +1,21 @@
+my-search {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    border: 1px solid teal;
+    box-shadow: 1px 1px 1px rgba(29, 192, 197, 0.041);
+    background-color: teal;
+    position: fixed;
+    top: 30%;
+    width: 350px;
+    left: calc(50% - 175px);
+    z-index: 1000;
+    padding: 16px;
+
+    button {
+        background-color: teal;
+        border: none;
+        outline: none;
+        font: inherit;
+        cursor: pointer;
+        color: teal;
+    }
+}

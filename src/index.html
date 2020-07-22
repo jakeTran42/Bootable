@@ -20,6 +20,17 @@
 <body>
 
   <button>Log In</button>
+  
+  <my-modal-bundle title="Info" content="This is an important information!"></my-modal-bundle>
+  <script>
+    var btn = document.querySelector('button');
+    var modal = document.querySelector('my-modal-bundle');
+    btn.addEventListener('click', function () {
+      // modal.style.display = 'block';
+      modal.open();
+    });
+  </script>
+  <button>Search</button>
 
   <my-modal-bundle title="Info" content="This is an important information!"></my-modal-bundle>
   <script>
