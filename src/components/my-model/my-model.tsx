@@ -1,4 +1,4 @@
-import { Component, h} from '@stencil/core';
+import { Component, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 'my-model',
@@ -7,7 +7,9 @@ import { Component, h} from '@stencil/core';
 })
 export class MyModel {
 
+  @Prop() text: string;
+
   render() {
-  return <div>Hello! There general kenobi</div>;
+  return <div>{this.text}</div>;
   }
 }

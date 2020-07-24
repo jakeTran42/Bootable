@@ -6,56 +6,129 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface LoaderCircle {
+    }
+    interface MyBackdrop {
+    }
+    interface MyDropdown {
+        "name": string;
+    }
+    interface MyModel {
+        "text": string;
+    }
+    interface MyNav {
+    }
+    interface ProductCard {
+        "badge": string;
+        "category": string;
+        "description": string;
+        "img": string;
+        "item": string;
+        "price": string;
+    }
+    interface ProgressBar {
+        "progress": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLLoaderCircleElement extends Components.LoaderCircle, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLLoaderCircleElement: {
+        prototype: HTMLLoaderCircleElement;
+        new (): HTMLLoaderCircleElement;
+    };
+    interface HTMLMyBackdropElement extends Components.MyBackdrop, HTMLStencilElement {
+    }
+    var HTMLMyBackdropElement: {
+        prototype: HTMLMyBackdropElement;
+        new (): HTMLMyBackdropElement;
+    };
+    interface HTMLMyDropdownElement extends Components.MyDropdown, HTMLStencilElement {
+    }
+    var HTMLMyDropdownElement: {
+        prototype: HTMLMyDropdownElement;
+        new (): HTMLMyDropdownElement;
+    };
+    interface HTMLMyModelElement extends Components.MyModel, HTMLStencilElement {
+    }
+    var HTMLMyModelElement: {
+        prototype: HTMLMyModelElement;
+        new (): HTMLMyModelElement;
+    };
+    interface HTMLMyNavElement extends Components.MyNav, HTMLStencilElement {
+    }
+    var HTMLMyNavElement: {
+        prototype: HTMLMyNavElement;
+        new (): HTMLMyNavElement;
+    };
+    interface HTMLProductCardElement extends Components.ProductCard, HTMLStencilElement {
+    }
+    var HTMLProductCardElement: {
+        prototype: HTMLProductCardElement;
+        new (): HTMLProductCardElement;
+    };
+    interface HTMLProgressBarElement extends Components.ProgressBar, HTMLStencilElement {
+    }
+    var HTMLProgressBarElement: {
+        prototype: HTMLProgressBarElement;
+        new (): HTMLProgressBarElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "loader-circle": HTMLLoaderCircleElement;
+        "my-backdrop": HTMLMyBackdropElement;
+        "my-dropdown": HTMLMyDropdownElement;
+        "my-model": HTMLMyModelElement;
+        "my-nav": HTMLMyNavElement;
+        "product-card": HTMLProductCardElement;
+        "progress-bar": HTMLProgressBarElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface LoaderCircle {
+    }
+    interface MyBackdrop {
+    }
+    interface MyDropdown {
+        "name"?: string;
+        "onOnToggle"?: (event: CustomEvent<any>) => void;
+    }
+    interface MyModel {
+        "text"?: string;
+    }
+    interface MyNav {
+    }
+    interface ProductCard {
+        "badge"?: string;
+        "category"?: string;
+        "description"?: string;
+        "img"?: string;
+        "item"?: string;
+        "price"?: string;
+    }
+    interface ProgressBar {
+        "progress"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "loader-circle": LoaderCircle;
+        "my-backdrop": MyBackdrop;
+        "my-dropdown": MyDropdown;
+        "my-model": MyModel;
+        "my-nav": MyNav;
+        "product-card": ProductCard;
+        "progress-bar": ProgressBar;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "loader-circle": LocalJSX.LoaderCircle & JSXBase.HTMLAttributes<HTMLLoaderCircleElement>;
+            "my-backdrop": LocalJSX.MyBackdrop & JSXBase.HTMLAttributes<HTMLMyBackdropElement>;
+            "my-dropdown": LocalJSX.MyDropdown & JSXBase.HTMLAttributes<HTMLMyDropdownElement>;
+            "my-model": LocalJSX.MyModel & JSXBase.HTMLAttributes<HTMLMyModelElement>;
+            "my-nav": LocalJSX.MyNav & JSXBase.HTMLAttributes<HTMLMyNavElement>;
+            "product-card": LocalJSX.ProductCard & JSXBase.HTMLAttributes<HTMLProductCardElement>;
+            "progress-bar": LocalJSX.ProgressBar & JSXBase.HTMLAttributes<HTMLProgressBarElement>;
         }
     }
 }
