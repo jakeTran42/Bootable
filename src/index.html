@@ -5,10 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/ezjs.esm.js"></script>
-  <script nomodule src="/build/ezjs.js"></script>
+  <script type="module" src="/build/stencil.esm.js"></script>
+  <script nomodule src="/build/stencil.js"></script>
 
 </head>
 <body>
+
+<my-component first="Web Components" last="'Build with StencilJS"></my-component>
+
+<hr />
+<hr />
+
+
+<my-header first="Home" second="Products" third="Login">
+</my-header>
+
+<br />
+<br />
+
+<my-footer></my-footer>
+
+
+
+<my-card title="Product Title" content="Image"></my-card>
+
+<br />
+
+
+<progress-bar></progress-bar>
+
+
+
+<script>
+  (function () {
+    let progress = document.querySelector('progress-bar'),
+      complete = 0;
+
+    const progressInterval = setInterval(() => {
+      complete += 1;
+      if (complete <= 100) {
+        progress.complete = complete;
+      } else {
+        clearInterval(progressInterval);
+      }
+    }, 100);
+  })();
+</script>
+
 </body>
 </html>
