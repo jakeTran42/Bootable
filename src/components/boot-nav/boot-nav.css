@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: var(--spacing, space-around);
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--bg-color, #259992);
+    width: 100%;
+    height: 4em;
+    /* notice below: */
+    position: var(--nav-position, fixed);
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* nav-position, anchor-color, spacing */
