@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <title>Stencil Starter App</title>
+  <script src="/build/app.js"></script>
 
-  <script type="module" src="/build/ezjs.esm.js"></script>
-  <script nomodule src="/build/ezjs.js"></script>
+  <meta name="theme-color" content="#16161d">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="/assets/img/icon.png">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+
+</head>
+
+<body>
+  
+</body>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>E-Commerce Alerts</title>
+
+  <script type="module" src="/build/my-components.esm.js"></script>
+  <script nomodule src="/build/my-components.js"></script>
 
 </head>
 <body>
+
+  <my-alert kind="info" text = "This item is almost sold out!  "></my-alert>
+  <my-alert kind="success" text="Your email or password is incorrect!  "></my-alert>
+  <my-alert kind="error" text = "Are you sure you want to proceed?  "></my-alert>
+  
+<script>
+function handleTabActivate(e) {
+  console.log(e.detail.name);
+}
+document.addEventListener("tabActivate", handleTabActivate)
+</script>
 </body>
+</html>
+
 </html>

@@ -1,0 +1,28 @@
+my-login {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    width: 350px;
+    left: calc(50% - 175px);
+    z-index: 1000;
+    padding: 16px;
+
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font: inherit;
+        cursor: pointer;
+        color: #fa923f;
+    }
+}
+
+/**
+This component is the log-in button, which is used in all websites
+that require an account being linked. When a user is in the component's directory,
+they can type npm start, and the browser opens, with the log in button. Once
+a user inputs their information on any site, they're bound to need a 
+log in button. */
