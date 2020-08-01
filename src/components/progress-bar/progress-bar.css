@@ -1,0 +1,30 @@
+.progress {
+    margin:20px auto;
+    padding:0;
+    width: var(--bar-width, 50%);
+    height: var(--bar-height, 30px);
+    overflow:hidden;
+    background: var(--bg-color, #e5e5e5);
+    border-radius: 30px;
+  }
+  
+  .bar {
+    position:relative;
+    float:left;
+    min-width:1%;
+    height:100%;
+    background:var(--bar-color, #D7778E);
+  }
+  
+  .percent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-size: 1vw;
+    color:var(--fnt-color, #fff);;
+  }
+
+/* --background-color, --bar-color
+ --font-color, --bar-width, --bar-height */

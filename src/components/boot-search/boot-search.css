@@ -1,0 +1,113 @@
+:host {
+    --width: var(--search-width, 200px);
+    --height: var(--search-height, 20px);
+}
+/* 
+.search-box {
+    display: flex;
+    width: var(--width);
+    border: none;
+    position: relative;
+    height: var(--height);
+    background: #2dc2b9;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px #BEB4FF;
+    color: white;
+    font-weight: 600;
+    cursor: text;
+}
+
+.search-box input{
+    position: absolute;
+    z-index: 0;
+    width: var(--width);
+    height: var(--height);
+    border-radius: 15px;
+    border: none;    
+    color: white;
+    font-weight: 600;
+    background: #2dc2b9;
+    padding-left: 60px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus + .search {
+    transform: perspective(400px) rotateY(89deg);
+    padding: 3px 0;
+    opacity: 0;
+}
+
+.search-box i.search {
+    height: calc(var(--height) / 4);
+    width: calc(var(--width) / 22.5);;
+    border: calc(var(--width)/50) solid #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    transform:  rotatez(-45deg);
+    top: 13px;
+    left: 5%;
+    transition: .2s all;
+    transform-style: preserve-3d;		
+    perspective: 400px;
+}
+
+.search-box i.search::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: calc(var(--width)/20);
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 2px);
+    border-radius: 10px;
+    top: 101%;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  } */
+
+
+.search-container{
+    width: var(--width);
+    display: block;
+    margin: 0 auto;
+}
+
+  
+input#search-bar{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--height);
+    padding: 0 20px;
+    font-size: .8rem;
+    border: 1px solid #D0CFCE;
+    border-radius: 25px;
+    outline: none;
+}
+
+input#search-bar:focus{
+    border: 1px solid #D7778E;
+    transition: 0.35s ease;
+    color: #D7778E;
+    /* &::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+        opacity: 0;
+    }
+    &::-moz-placeholder {
+    transition: opacity 0.45s ease; 
+        opacity: 0;
+    }
+    &:-ms-placeholder {
+    transition: opacity 0.45s ease; 
+        opacity: 0;
+    }     */
+}

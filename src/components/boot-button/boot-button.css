@@ -1,0 +1,23 @@
+:host {
+    --radius: var(--btn-rad, 5px);
+    --background: var(--bg-color, #259992);
+    --color: var(--btn-color, #fff);
+}
+
+button {
+    background-color: var(--background);
+    color: var(--color);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: var(--radius);
+    border: 1px solid #fff;
+}
+
+button:hover {
+    background: #fff;
+    color: #259992;
+    border: 1px solid #259992;
+    cursor: pointer;
+}
